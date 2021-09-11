@@ -1,0 +1,125 @@
+.intro_container{
+  position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.into_heading_wrapper{
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+.intro_heading{
+  font-family: LL Circular,sans-serif;
+  font-weight: 500;
+  display: block;
+  position: relative;
+  margin: 0px;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  text-align: left;
+}
+
+.icons_container{
+  position: relative;
+  z-index: 1;
+}
+
+.icons_wrapper{
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.icons_list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  width: 134px;
+}
+
+.icon_image{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  margin: 0px 8px 0px 0px;
+}
+
+.icon_name{
+  font-family: "LL Circular", sans-serif;
+  color: rgb(20, 43, 111);
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 300;
+  text-align: center;
+  flex: 1 1 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .into_heading_wrapper{
+    flex: 0 0 66.67%;
+    max-width: 66.67%;
+    margin-left: 16.67%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .icons_wrapper{
+    margin-left: 8.33%;
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .into_heading_wrapper{
+    flex: 0 0 83.33%;
+    max-width: 83.33%;
+    margin-left: 8.33%;
+  }
+
+  .icons_wrapper{
+    margin-left: 16.67%;
+    flex: 0 0 66.67%;
+    max-width: 66.67%;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .intro_container{
+    margin-top: 48px;
+    margin-bottom: 80px;
+  }
+
+  .intro_heading{
+    text-align: center;
+  }
+
+  .icon_image{
+    width: 40px;
+    height: 40px;
+    margin: 0px auto 16px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .intro_container{
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+
+  .icon_image{
+    min-height: 40px;
+  }
+}
